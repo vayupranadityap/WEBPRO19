@@ -1,0 +1,11 @@
+* {
+	font-family: consolas;
+}
+
+table button {
+	width: 100%;
+}
+
+#result-view {
+	height: 2vh;
+}

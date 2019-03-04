@@ -1,0 +1,1 @@
+if ($('#name').text !== '' && $('#name-field'))

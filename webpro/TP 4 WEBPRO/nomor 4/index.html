@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Soal No.4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LOAD YOUR CSS HERE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div>
+        <!-- PUT YOUR SELECTOR -->
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <button id="up">Up</button>
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+    </div>
+    
+    </div>
+    <div class="bean">
+        <!-- LOAD boo.png here -->
+        <img src="img/boo.png" id="image"><h2></h2>
+        <!-- End Of Load boo.png -->
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        let image = $('#image');
+        $('#show').click(() => {
+            image.css('display', 'block');
+            $('.bean h2').text('Active Button:Show');
+        });
+        $('#hide').click(() => {
+            image.css('display', 'none');
+            $('.bean h2').text('Active Button:Hide');
+        });
+        $('#left').click(() => {
+            image.css('display', 'block');
+            image.css('transform', 'rotate(0deg)');
+            $('.bean h2').text('Active Button:Left');
+        });
+        $('#up').click(() => {
+            image.css('display', 'block');
+            image.css('transform', 'rotate(90deg)');
+            $('.bean h2').text('Active Button:Up');
+        });
+        $('#right').click(() => {
+            image.css('display', 'block');
+            image.css('transform', 'rotate(-90deg)');
+            $('.bean h2').text('Active Button:Right');
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lat4</title>
+	<link rel="stylesheet" type="text/css" href="css/lat4.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<th colspan="4" style="text-align: right;" id="result-view">0</th>
+		</tr>
+		<tr>
+			<td colspan="2"><button class="func" id="cls">AC</button></td>
+			<td colspan="2"><button class="func" id="del"><-</button></td>
+		</tr>
+		<tr>
+			<td><button class="number">7</button></td>
+			<td><button class="number">8</button></td>
+			<td><button class="number">9</button></td>
+			<td><button class="oper" id="*">x</button></td>
+		</tr>
+		<tr>
+			<td><button class="number">4</button></td>
+			<td><button class="number">5</button></td>
+			<td><button class="number">6</button></td>
+			<td><button class="oper" id="/">/</button></td>
+		</tr>
+		<tr>
+			<td><button class="number">1</button></td>
+			<td><button class="number">2</button></td>
+			<td><button class="number">3</button></td>
+			<td><button class="oper" id="+">+</button></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button class="number">0</button></td>
+			<td><button id="=">=</button></td>
+			<td><button class="oper" id="-">-</button></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td>NIM</td>
+			<td>:</td>
+			<td>
+				<input type="text" name="nim" id="nim" placeholder="NIM" />
+			</td>
+		</tr>
+		<tr>
+			<td>Nama</td>
+			<td>:</td>
+			<td>
+				<input type="text" name="name" id="name" placeholder="Nama" />
+			</td>
+		</tr>
+		<tr>
+			<td>Asal</td>
+			<td>:</td>
+			<td>
+				<input type="text" name="origin" id="origin" placeholder="Asal" />
+			</td>
+		</tr>
+	</table>
+	<button id="addDataBtn">Add</button>
+	<br/>
+	<br/>
+	<table border="1" id="dataTable">
+		<tr>
+			<th>NIM</th>
+			<th>Nama</th>
+			<th>Asal</th>
+		</tr>
+	</table>
+	<script type="text/javascript" src="js/lat4.js"></script>
+</body>
+</html>
